@@ -1,11 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<title>Our Funky HTML Page</title>
-<meta name="description" content="Our first page">
-<meta name="keywords" content="html tutorial template">
-</head>
-<body>
-Content goes here.
-</body>
+  <head>
+    <title>Marvin Orozco's Website</title>
+    <meta name="description" content="Important links and insight to who I, Marvin Orozco, am and what I'm about.">
+    <meta name="keywords" content="Profile">
+  </head>
+  <body>
+    <h1>Marvin Orozco</h1>
+  </body>
+  <button onclick="showContent()">Show hidden content</button>
+
+  <template>
+    <h2>ME!</h2>
+    <img src="Pro.Photo.png" width="214" height="204">
+  </template>
+
+  <script>
+    function showContent() {
+    let temp = document.getElementsByTagName("template")[0];
+    let clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+    }
+  </script>
 </html>
