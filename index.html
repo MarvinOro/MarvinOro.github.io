@@ -1,25 +1,32 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>Marvin Orozco's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Important links and insight to who I, Marvin Orozco, am and what I'm about.">
     <meta name="keywords" content="Profile">
-  </head>
-  <body>
-    <h1>Marvin Orozco</h1>
-  </body>
-  <button onclick="showContent()">Show hidden content</button>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> <!-- Bootstrap JS Popper -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <div class="container">
+      <h1 class="text-center">Marvin Orozco</h1>
+      <button id="showContentButton" class="btn btn-primary">Show hidden content</button>
 
-  <template>
-    <h2>ME!</h2>
-    <img src="Pro. Photo.png" width="1242" height="830">
-  </template>
+      <template id="ME!Template">
+          <div class="mt-4">
+              <h2>ME!</h2>
+              <img src="Pro. Photo.png" class="img-fluid" alt="Profile Photo"> <!-- Use Bootstrap's responsive image class -->
+          </div>
+      </template>
 
-  <script>
-    function showContent() {
-    let temp = document.getElementsByTagName("template")[0];
-    let clon = temp.content.cloneNode(true);
-    document.body.appendChild(clon);
-    }
-  </script>
+      <div id="contentContainer"></div>
+  </div>
+
+  <script src="./app.js" defer></script> <!-- Link to your JavaScript file -->
+</body>
 </html>
