@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Marvin Orozco's Website</title>
+    <meta name="description" content="Important links and insight to who I, Marvin Orozco, am and what I'm about.">
+    <meta name="keywords" content="Profile">
+  </head>
+  <body>
+    <h1>Marvin Orozco</h1>
+  </body>
+  <button onclick="showContent()">Show hidden content</button>
+
+  <template>
+    <h2>ME!</h2>
+    <img src="Pro. Photo.png" width="1242" height="830">
+  </template>
+
+  <script>
+    function showContent() {
+    let temp = document.getElementsByTagName("template")[0];
+    let clon = temp.content.cloneNode(true);
+    document.body.appendChild(clon);
+    }
+  </script>
+</html>
