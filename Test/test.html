@@ -1,25 +1,33 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <title>Marvin Orozco's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Important links and insight to who I, Marvin Orozco, am and what I'm about.">
     <meta name="keywords" content="Profile">
-  </head>
-  <body>
-    <h1>Marvin Orozco</h1>
-  </body>
-  <button onclick="showContent()">Show hidden content</button>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./app.css">
+</head>
+<body>
+  <div class="container">
+      <h1 class="text-center">Marvin Orozco</h1>
+      <div class="text-center">
+        <button id="" class="btn btn-primary" c>Press me</button>
+      </div>
+      <template id="ME!Template">
+          <div class="mt-4">
+              <h2>My future portfolio. Unfortunately under construction.</h2>
+              <p>Updates will go live every week on Saturdays for about 2 months!</p>
+              <p>In the meantime, here's a picture of me and some swans:</p>
+              <img src="../Pro. Photo.png" class="img-fluid" alt="Profile Photo">
+              <p>-10/3/2024</p>
+          </div>
+      </template>
 
-  <template>
-    <h2>ME!</h2>
-    <img src="Pro. Photo.png" width="1242" height="830">
-  </template>
+      <div id="contentContainer"></div>
+  </div>
 
-  <script>
-    function showContent() {
-    let temp = document.getElementsByTagName("template")[0];
-    let clon = temp.content.cloneNode(true);
-    document.body.appendChild(clon);
-    }
-  </script>
+  <script src="../app.js" defer></script>
+</body>
 </html>

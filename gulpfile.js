@@ -7,7 +7,7 @@ const sass = require('gulp-dart-sass'); // Use gulp-dart-sass instead
 gulp.task('sass', function() {
     return gulp.src('./app.scss') // Source file
         .pipe(sass().on('error', sass.logError)) // Compile Sass and log errors
-        .pipe(gulp.dest('./css')); // Destination for compiled CSS
+        .pipe(gulp.dest('./')); // Destination for compiled CSS
 });
 
 // Default task
