@@ -11923,3 +11923,20 @@ nav a {
 .tabContents.activeTab {
   display: block;
 }
+
+.expFormat {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.expFormat .left {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: left;
+}
+.expFormat .leftBody {
+  text-align: left;
+}
+.expFormat .right {
+  text-align: right;
+}

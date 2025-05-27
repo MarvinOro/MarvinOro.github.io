@@ -81,3 +81,23 @@ nav {
 .tabContents.activeTab {
   display:block;
 }
+
+.expFormat {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+
+  .left {
+    font-weight: bold;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  .leftBody{
+    text-align: left;
+  }
+
+  .right {
+    text-align: right;
+  }
+}
