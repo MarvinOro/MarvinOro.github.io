@@ -11844,6 +11844,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: white;
+}
+
 nav ul {
   margin: 0;
   padding: 6px;
