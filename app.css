@@ -11924,10 +11924,18 @@ nav a {
   display: block;
 }
 
+li {
+  margin-bottom: 10px;
+}
+
+.subheader {
+  font-size: 16px;
+  font-style: italic;
+}
+
 .expFormat {
   display: flex;
   justify-content: space-between;
-  padding: 10px;
 }
 .expFormat .left {
   font-weight: bold;
