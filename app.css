@@ -11952,3 +11952,50 @@ li {
 .expFormat .right {
   text-align: right;
 }
+
+.boxContainer {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 2px solid black;
+  flex-wrap: wrap;
+}
+
+.box {
+  flex: 0 1 320px;
+  width: 150px;
+  margin: 8px;
+  padding: 16px;
+  border: 2px solid #ccc;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  overflow: visible; /* allow content to expand the box vertically */
+}
+
+.box-header {
+  top: 0;
+  align-self: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  height: 56px;
+  min-height: 56px;
+  flex: 0 0 56px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.box-body {
+  padding: 12px 0 0 0;
+  overflow: visible;
+}
+
+p.pointer {
+  cursor: pointer;
+  padding-bottom: 6px;
+  font-size: larger;
+}

@@ -1,11 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
+    <link rel="stylesheet" href="../app.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working</title>
+    <h1>Copy Page</h1>
 </head>
-<body>
+<body style="background-color: #fff;">
+    <div class="boxContainer">
+        <!-- Example box with a sticky header and a scrollable body -->
+        <div class="box">
+            <div class="box-header" data-copy="Wearable Engineering and Assistive Robotics Lab" onclick="copyData(this)">
+                Wearable Engineering and Assistive Robotics Lab</div>
+            <div class="box-body">
+                <p class="pointer" data-copy="Project Manager" onclick="copyData(this)">
+                    Title.</p>
+                <p class="pointer" data-copy="Working alongside electrical and mechanical engineers, we created a robot dog equipped with an artificial olfactory sense created with gas sensors and a classification machine learning model. My main contributions included programming the robot’s motors to enable smooth movement, configuring sensor libraries in Python for effective data handling, and implementing Support Vector Machine (SVM) algorithms for machine learning-based odor classification to achieve artificial olfaction. Additionally, I developed a full-stack dynamic GUI that displayed live sensor data and provided control over the robot dog’s functions. Through this project, I gained practical experience with electrical engineering concepts, particularly I²C communication, to program and wire peripheral devices for inter-board communication. I also configured Raspberry Pi system settings and imported libraries to optimize hardware performance for mission-critical functionality. Furthermore, I constructed and trained a convolutional neural network (CNN) using TensorFlow to accurately classify odors based on fused gas sensor data, and deployed an on-premise web server to host the interactive graphical interface." onclick="copyData(this)">
+                    Responsibilities.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header" data-copy="Mixed Emerging Technology Integration Lab" onclick="copyData(this)">
+                Mixed Emerging Technology Integration Lab</div>
+            <div class="box-body">
+                <p class="pointer" data-copy="Software Engineer Intern" onclick="copyData(this)">
+                    Title.</p>
+                <p class="pointer" data-copy="As an intern at the Mixed Emerging Technology Integration Lab from November 2024 to January 2025, I proposed and developed a custom solution for the Department of Energy’s Y-12 National Security Complex through direct collaboration with a department director. My primary contribution was the creation of a Unity-based simulation that transmitted metadata and user-specific statistics to an Ollama language model to enable real-time feedback. I also configured a retrieval-augmented generation (RAG) system to ensure scalability and reduce the likelihood of hallucinations in the model’s responses." onclick="copyData(this)">
+                    Responsibilities.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header" data-copy="Red Panda Webshop" onclick="copyData(this)">
+                Red Panda Webshop</div>
+            <div class="box-body">
+                <p class="pointer" data-copy="Frontend Developer" onclick="copyData(this)">
+                    Title.</p>
+                <p class="pointer" data-copy="I developed a functional e-commerce storefront frontend using Angular and TypeScript, organizing the codebase with feature-based modules to support scalability and maintainability. To create an intuitive and cohesive shopping experience, I implemented Angular routing and applied responsive design principles using Angular Material, ensuring the interface adapted smoothly across devices. I integrated the FakeStoreAPI through a centralized Angular service to fetch, validate, and manage product data, dynamically rendering product listings and enabling realistic, data-driven interactions for users." onclick="copyData(this)">
+                    Responsibilities.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header" data-copy="Subscription Tracker" onclick="copyData(this)">
+                Subscription Tracker</div>
+            <div class="box-body">
+                <p class="pointer" data-copy="Backend Developer" onclick="copyData(this)">
+                    Title.</p>
+                <p class="pointer" data-copy="I developed a backend service using Node.js and Express that managed user subscriptions end-to-end and automated email renewal reminders. To support this, I integrated MongoDB with Mongoose to model subscription and user data, which made queries more efficient and allowed me to handle relational-style interactions between users and their subscriptions. I implemented authentication and authorization using JWTs, ensuring that only verified users could access protected routes and actions. I also focused on system reliability and security by adding rate limiting and bot detection with Arcjet, which protected the service against automated abuse while maintaining a smooth experience for real users." onclick="copyData(this)">
+                    Responsibilities.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header" data-copy="Mars Society Rover Challenge" onclick="copyData(this)">
+                Mars Society Rover Challenge</div>
+            <div class="box-body">
+                <p class="pointer" data-copy="Software Engineer" onclick="copyData(this)">
+                    Title.</p>
+                <p class="pointer" data-copy="We programmed a remotely operated rover using ROS2 to autonomously traverse terrain and collect physical samples, enabling the retrieval of environmental data such as humidity to support future Mars missions and research. To enhance its functionality, I implemented computer vision algorithms capable of detecting specified objects by referencing external databases or storing collected data based on task requirements. For autonomous navigation, LiDAR was integrated with camera inputs, allowing the rover to perceive and respond to its environment with greater accuracy and spatial awareness." onclick="copyData(this)">
+                    Responsibilities.</p>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-header" data-copy="SmartStacks Study App" onclick="copyData(this)">
+                SmartStacks Study App</div>
+            <div class="box-body">
+                <p class="pointer" data-copy="Mobile Developer" onclick="copyData(this)">
+                    Title.</p>
+                <p class="pointer" data-copy="I developed a mobile application using React Native, focusing on creating a responsive and efficient user experience. Throughout the project, I collaborated closely with web and back-end developers to integrate cross-platform functionality, ensuring a consistent and seamless experience across devices. I also managed data queries and caching mechanisms to enable smooth and reliable interactions with back-end services, contributing to the app’s overall performance and usability." onclick="copyData(this)">
+                    Responsibilities.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyData(btn) {
+            const text = btn.dataset.copy;
+            navigator.clipboard.writeText(text);
+            alert("Copied text");
+        }
+    </script>
     
 </body>
 </html>
